@@ -9,7 +9,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 
 });
-
+bot.user.setPresence({ status: 'online', game: { name: 'mine-list.com | -help' } });
  
 
 client.on('message', message => {
