@@ -15,16 +15,6 @@ client.user.setStatus('dnd', 'mine-list.com | -help')
 
 client.on('message', message => {
 
-    if (message.content === 'ping') {
-
-       message.reply('pong');
-
-       }
-
-});
-
-client.on('message', message => {
-
     if (message.content === '-website') {
 
        message.reply('The website is: https://mine-list.com/');
