@@ -25,7 +25,17 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content === '-website') {
+    if (message.content === '!help') {
+
+       message.reply('The commands I offer are:\n\n**!help** | Shows a list of commands.\n**!website** | Gives a website link.');
+
+       }
+
+});
+
+client.on('message', message => {
+
+    if (message.content === '!website') {
 
        message.reply('The website is: https://mine-list.com/');
 
