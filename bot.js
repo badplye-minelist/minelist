@@ -9,7 +9,15 @@ client.on('ready', () => {
     console.log('I am ready!');
 
 });
- 
+client.on("ready", () => {
+    client.user.setPresence({
+        game: { 
+            name: 'mine-list.com | !help',
+            type: 'WATCHING'
+        },
+        status: 'idle'
+    })
+})
 
 client.on('message', message => {
 
