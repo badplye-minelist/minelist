@@ -9,7 +9,16 @@ client.on('ready', () => {
     console.log('I am ready!');
 
 });
-
+bot.on('ready', () => {
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'mine-list.com | -help',
+            type: "STREAMING",
+            url: "https://mine-list.com"
+        }
+    });
+});
  
 
 client.on('message', message => {
