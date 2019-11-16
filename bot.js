@@ -22,6 +22,16 @@ client.on('message', message => {
 
 });
 
+client.on('message', message => {
+
+    if (message.content === '-website') {
+
+       message.reply('The website is: https://mine-list.com/');
+
+       }
+
+});
+
  
 
 // THIS  MUST  BE  THIS  WAY
