@@ -72,8 +72,7 @@ client.on('message', message => {
       name: client.user.username,
       icon_url: client.user.avatarURL
     },
-    title: "Help",
-    url: "http://mine-list.com",
+    title: "Help Menu",
     description: "The current bot prefix is **?**\n--------------------",
     fields: [{
         name: "Help",
@@ -94,12 +93,16 @@ client.on('message', message => {
       {
         name: "Ping",
         value: "Pong ;)."
+      },
+      {
+        name: "Additional Features",
+        value: "There are countless features we re working to add, some of these features our built into our website."
       }
     ],
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: "Minelist"
+      text: "Your #1 minecraft sales site since 2019"
     }
   }
 });
