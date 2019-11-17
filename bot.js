@@ -24,7 +24,7 @@ client.on('message', message => {
 
     if (message.content === '?help') {
 
-       message.reply('The commands I offer are:\n\n**?help** | Shows a list of commands.\n**?website** | Gives a website link.\n**?suppport** | Lists easiest ways to get support.\n**?about** | Learn more about Minelist!\n**?ping** | Pong ;).');
+       message.reply('below are a list of our current commands!');
 
        }
 
