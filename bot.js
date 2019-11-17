@@ -1,8 +1,12 @@
 const Discord = require('discord.js');
 
+const client = new Discord.Client();
+
+ 
+
 client.on('ready', () => { //On successful login
     console.log("Up and running!");
-    client.user.setPresence({ game: { name: 'mine-list.com | ?help', type: 1 } });
+    client.user.setPresence({ game: { name: 'mine-list.com | ?help', type: 0 } });
 });
 
 client.on('message', message => {
@@ -14,18 +18,7 @@ client.on('message', message => {
        }
 
 });
-client.on('message', message => {
 
-    if (message.content === '?embed') {
-	    
-	message.channel.send({embed: {
-  color: 3447003,
-  description: "A very simple Embed!"
-}});    
-	    
-       }
-
-});
 
 client.on('message', message => {
 
