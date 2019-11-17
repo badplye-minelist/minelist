@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
+// at the top of your file
+const Discord = require('discord.js');
 
-const client = new Discord.Client();
-const helpembed = new Discord.RichEmbed()
+// inside a command, event listener, etc.
+const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
@@ -17,12 +19,11 @@ const helpembed = new Discord.RichEmbed()
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
-channel.send(helpembed);
  
 
 client.on('ready', () => { //On successful login
     console.log("Up and running!");
-    client.user.setPresence({ game: { name: 'mine-list.com | ?help', type: 0 } });
+    client.user.setPresence({ game: { name: 'mine-list.com | ?help', type: 1 } });
 });
 
 client.on('message', message => {
@@ -38,7 +39,7 @@ client.on('message', message => {
 
     if (message.content === '?embed') {
      
-     channel.send({ embed: helpembed });
+     channel.send(exampleEmbed);
        }
 
 });
