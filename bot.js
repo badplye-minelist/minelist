@@ -32,16 +32,6 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content === '?support') {
-
-       message.reply('Need some help? Submit a ticket at https://mine-list.com/support/\n\nAlternatively, you can reach out to an admin via __admin@mine-list.com__!');
-
-       }
-
-});
-
-client.on('message', message => {
-
     if (message.content === '?about') {
 
        message.reply('Founded by Jordan, Julius, and Aiden, Minelist operates with a goal to provide users with an unbiased expirence. Created from the ground up, hours of work and effort have been put in to making Minelist your site!');
@@ -64,7 +54,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content === '?embed') {
+    if (message.content === '?help') {
 
        message.channel.send({embed: {
     color: 0xFF8C8C,
@@ -96,13 +86,13 @@ client.on('message', message => {
       },
       {
         name: "Additional Features",
-        value: "There are countless features we re working to add, some of these features our built into our website."
+        value: "There are countless features we are working to add, some of these features our built into our website."
       }
     ],
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: "Your #1 minecraft sales site since 2019"
+      text: "Your #1 minecraft sales site."
     }
   }
 });
