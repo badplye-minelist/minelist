@@ -4,20 +4,10 @@ const client = new Discord.Client();
 
  
 
-client.on('ready', () => {
-
-    console.log('I am ready!');
-
+client.on('ready', () => { //On successful login
+    console.log("Up and running!");
+    client.user.setGame("mine-list.com | !help"); //Set the "Playing" text
 });
-client.on("ready", () => {
-    client.user.setPresence({
-        game: { 
-            name: 'mine-list.com | !help',
-            type: 'WATCHING'
-        },
-        status: 'idle'
-    })
-})
 
 client.on('message', message => {
 
