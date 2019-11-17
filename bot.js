@@ -32,6 +32,27 @@ client.on('message', message => {
 
 client.on('message', message => {
 
+    if (message.content === '!support') {
+
+       message.reply('Need some help? Submit a ticket at https://mine-list.com/support/\n\nAlternatively, you can reach out to an admin via __admin@mine-list.com__!');
+
+       }
+
+});
+
+client.on('message', message => {
+
+    if (message.content === '!about') {
+
+       message.reply('Founded by Jordan, Julius, and Aiden, Minelist operates with a goal to provide users with an unbiased expirence. Created from the ground up, hours of work and effort have been put in to making Minelist your site!');
+
+       }
+
+});
+
+
+client.on('message', message => {
+
     if (message.content === '!website') {
 
        message.reply('The website is: https://mine-list.com/');
