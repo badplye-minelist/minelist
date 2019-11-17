@@ -19,43 +19,6 @@ client.on('message', message => {
 
 });
 
-client.on('message', message => {
-
-    if (message.content === '?embed') {
-
-       message.channel.send({embed: {
-    color: ff8c8c,
-    author: {
-      name: client.user.username,
-      icon_url: client.user.avatarURL
-    },
-    title: "Help",
-    url: "http://mine-list.com",
-    description: "The current bot prefix is **?**",
-    fields: [{
-        name: "Fields",
-        value: "They can have different fields with small headlines."
-      },
-      {
-        name: "Masked links",
-        value: "You can put [masked links](http://google.com) inside of rich embeds."
-      },
-      {
-        name: "Markdown",
-        value: "You can put all the *usual* **__Markdown__** inside of them."
-      }
-    ],
-    timestamp: new Date(),
-    footer: {
-      icon_url: client.user.avatarURL,
-      text: "Minelist"
-    }
-  }
-});
-
-       }
-
-});
 
 client.on('message', message => {
 
@@ -97,6 +60,46 @@ client.on('message', message => {
        }
 
 });
+
+
+client.on('message', message => {
+
+    if (message.content === '?embed') {
+
+       message.channel.send({embed: {
+    color: ff8c8c,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "Help",
+    url: "http://mine-list.com",
+    description: "The current bot prefix is **?**",
+    fields: [{
+        name: "Fields",
+        value: "They can have different fields with small headlines."
+      },
+      {
+        name: "Masked links",
+        value: "You can put [masked links](http://google.com) inside of rich embeds."
+      },
+      {
+        name: "Markdown",
+        value: "You can put all the *usual* **__Markdown__** inside of them."
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "Minelist"
+    }
+  }
+});
+
+       }
+
+});
+
 
  
 
