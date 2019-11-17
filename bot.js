@@ -35,14 +35,17 @@ client.on('message', message => {
     fields: [{
         name: "Fields",
         value: "They can have different fields with small headlines."
+        inline: true,
       },
       {
         name: "Masked links",
         value: "You can put [masked links](http://google.com) inside of rich embeds."
+       inline: true,
       },
       {
         name: "Markdown",
         value: "You can put all the *usual* **__Markdown__** inside of them."
+       inline: true,
       }
     ],
     timestamp: new Date(),
