@@ -74,18 +74,26 @@ client.on('message', message => {
     },
     title: "Help",
     url: "http://mine-list.com",
-    description: "The current bot prefix is **?**",
+    description: "The current bot prefix is **?**\n--------------------",
     fields: [{
-        name: "Fields",
-        value: "They can have different fields with small headlines."
+        name: "Help",
+        value: "Shows a list of commands."
       },
       {
-        name: "Masked links",
-        value: "You can put [masked links](http://google.com) inside of rich embeds."
+        name: "Website",
+        value: "Gives the [website](http://mine-list.com) link."
       },
       {
-        name: "Markdown",
-        value: "You can put all the *usual* **__Markdown__** inside of them."
+        name: "Support",
+        value: "Lists the easiest ways to get support."
+      },
+      {
+        name: "About",
+        value: "Learn more about Minelist!"
+      },
+      {
+        name: "Ping",
+        value: "Pong ;)."
       }
     ],
     timestamp: new Date(),
