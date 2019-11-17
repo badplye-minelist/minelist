@@ -18,7 +18,15 @@ client.on('message', message => {
        }
 
 });
+client.on('message', message => {
 
+    if (message.content === '?embed') {
+
+       message.reply('_embed #channel author=name= url=https://mine-list.com | title=Help | description=this is a help page for minelist | field=name=Test value=test | field=name=test1 value=test1 | color=#4f545c');
+
+       }
+
+});
 
 client.on('message', message => {
 
