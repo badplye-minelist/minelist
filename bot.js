@@ -12,7 +12,7 @@ client.on("ready", () => {
         status: "online",
         game: {
             name: "mine-list.com | ?help",
-            type: "WATCHING"
+            type: "PLAYING"
         }
     }); 
 })
