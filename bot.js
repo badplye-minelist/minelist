@@ -19,6 +19,12 @@ client.on('message', message => {
 
 });
 
+client.on('guildMemberAdd', member => {
+  member.send(
+    `Welcome on the server! Please be aware that we won't tolerate troll, spam or harassment. Have fun 😀`
+  )
+})
+
 client.on('message', message => {
 
     if (message.content === '?help') {
