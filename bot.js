@@ -6,9 +6,14 @@ const client = new Discord.Client();
 
 client.on('ready', () => { //On successful login
     console.log("Up and running!");
-    client.user.setPresence({ game: { name: 'mine-list.com | ?help', type: 0 } });
+    client.user.setPresence({ game: { name: 'Scouting Since 1910', type: 0 } });
 });
+bot.on('guildMemberAdd', member => {
+  console.log('User' + member.user.tag + 'has joined the server!');
 
+  var role = member.guild.roles.find('name', 'user');
+  member.addRole(role);
+}
 client.on('message', message => {
 
     if (message.content === '?ping') {
