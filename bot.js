@@ -4,9 +4,9 @@ const client = new Discord.Client();
 
  
 
-client.on('ready', () => { //On successful login	client.on("ready", () => {
+client.on('ready', () => { //On successful login
     console.log("Up and running!");
-    client.user.setPresence({ game: { name: 'mine-list.com | ?help', type: 0 } });	
+    client.user.setPresence({ game: { name: 'mine-list.com | ?help', type: 0 } });
 });
 
 client.on('message', message => {
