@@ -4,18 +4,10 @@ const client = new Discord.Client();
 
  
 
-client.on("ready", () => {
-    console.log(`Hi, ${client.user.username} is now online!`);
-
-    // Set the user presence
-    client.user.setPresence({
-        status: "online",
-        game: {
-            name: "mine-list.com | ?help",
-            type: "PLAYING"
-        }
-    }); 
-})
+client.on('ready', () => { //On successful login	client.on("ready", () => {
+    console.log("Up and running!");
+    client.user.setPresence({ game: { name: 'mine-list.com | ?help', type: 0 } });	
+});
 
 client.on('message', message => {
 
